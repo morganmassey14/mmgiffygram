@@ -42,7 +42,6 @@ const startGiffyGram = () => {
 	showNavBar();
 	theJokes();
 	showPostList();
-	theJokes();
 	showFooter();
 }
 startGiffyGram();
