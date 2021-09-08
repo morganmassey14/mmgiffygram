@@ -11,25 +11,32 @@
       "name": "Moon",
       "dateJoined": 1630513631166,
       "email": "moonunit@gmail.com"
-    },
-    {
-      "id": 3
     }
   ],
   "posts": [
     {
       "id": 1,
-      "userID": 1,
       "title": "Weiners",
-      "imageURL": "https://media.giphy.com/media/4MY6xgrmYYsCX6srMQ/giphy-downsized-large.gif?cid=ecf05e47ch7o62gqwyrxh17jnn3m72m6dz2xflxgdu53xoiu&rid=giphy-downsized-large.gif&ct=g"
-
+      "imageURL": "https://media.giphy.com/media/4MY6xgrmYYsCX6srMQ/giphy-downsized-large.gif?cid=ecf05e47ch7o62gqwyrxh17jnn3m72m6dz2xflxgdu53xoiu&rid=giphy-downsized-large.gif&ct=g",
+      "description": "This is a weiner",
+      "userId": 1,
+      "timestamp": 1630513631166
     },
     {
       "id": 2,
-      "userID": 1,
       "title": "More Weiners",
-      "imageURL": "https://media.giphy.com/media/5tvYKAHzqpXenwKrOD/giphy-downsized-large.gif?cid=ecf05e47ch7o62gqwyrxh17jnn3m72m6dz2xflxgdu53xoiu&rid=giphy-downsized-large.gif&ct=g"
-
+      "imageURL": "https://media.giphy.com/media/5tvYKAHzqpXenwKrOD/giphy-downsized-large.gif?cid=ecf05e47ch7o62gqwyrxh17jnn3m72m6dz2xflxgdu53xoiu&rid=giphy-downsized-large.gif&ct=g",
+      "description": "This is a weiner",
+      "userId": 1,
+      "timestamp": 1630513631166
+    },
+    {
+      "title": "ksdhfksjdf",
+      "imageURL": "https://giphy.com/gifs/NmGbJwLl7Y4lG",
+      "description": "",
+      "userId": 1,
+      "timestamp": 1631131936166,
+      "id": 3
     }
   ],
   "messages": []
