@@ -84,6 +84,9 @@ formElement.addEventListener("click", event => {
 
 		// be sure to import from the DataManager
 		createPost(postObject)
+		.then(dbResponse => {
+			showPostList();
+		});
 	}
 })
 
