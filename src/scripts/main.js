@@ -68,6 +68,8 @@ applicationElement.addEventListener("change", event => {
 
 formElement.addEventListener("click", event => {
 	if (event.target.id === "newPost__cancel") {
+		showPostList();
+		showPostEntry();
 		//clear the input fields
 	}
 })
@@ -133,6 +135,7 @@ formElement.addEventListener("click", event => {
 		updatePost(postObject)
 			.then(response => {
 				showPostList();
+				showPostEntry();
 			})
 	}
 })
