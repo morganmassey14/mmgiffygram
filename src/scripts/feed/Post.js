@@ -7,6 +7,7 @@
         </header>
         <img class="post__image" src="${postObject.imageURL}" />
         <div><button id="edit--${postObject.id}">Edit</button></div>
+        <button id="delete__${postObject.id}">Delete</button>
         </section>
     `
   }

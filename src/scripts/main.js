@@ -1,5 +1,5 @@
 
-import { getPosts, createPost, usePostCollection } from "./data/DataManager.js"
+import { getPosts, createPost, usePostCollection, deletePost } from "./data/DataManager.js"
 import { PostList } from "./feed/PostList.js"
 import { getJokes } from "./data/JokesData.js"
 import { NavBar } from "./nav/NavBar.js"
@@ -12,7 +12,8 @@ const formElement = document.querySelector(".giffygram")
 const showPostList = () => {
 	//Get a reference to the location on the DOM where the list will display
 	const postElement = document.querySelector(".postList");
-	getPosts().then((allPosts) => {
+	getPosts()
+	.then((allPosts) => {
 		postElement.innerHTML = PostList(allPosts);
 	})
 }
@@ -63,6 +64,18 @@ formElement.addEventListener("click", event => {
 		//clear the input fields
 	}
 })
+
+formElement.addEventListener("click", event => {
+	console.log("eventTarget", event.target.id);
+	event.preventDefault();
+	if (event.target.id.startsWith("delete")) {
+	  const postId = event.target.id.split("__")[1];
+	  deletePost(postId)
+		.then(response => {
+		  showPostList();
+		})
+	}
+  })
 
 formElement.addEventListener("click", event => {
 	event.preventDefault();
