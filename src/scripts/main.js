@@ -114,11 +114,13 @@ formElement.addEventListener("click", event => {
 		const description = document.querySelector("textarea[name='postDescription']").value
 		//we have not created a user yet - for now, we will hard code `1`.
 		//we can add the current time as well
+		const userId = JSON.parse(sessionStorage.getItem("user"))
+		
 		const postObject = {
 			title: title,
 			imageURL: url,
 			description: description,
-			userId: 1,
+			userId: userId.id,
 			timestamp: Date.now()
 		}
 
