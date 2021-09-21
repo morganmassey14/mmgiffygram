@@ -4,6 +4,7 @@
       <section class="post">
         <header>
             <h2 class="post__title">${postObject.title}</h2>
+            <h3>${postObject.user.name}</h3>
         </header>
         <img class="post__image" src="${postObject.imageURL}" />
         <button id="delete__${postObject.id}">Delete</button>

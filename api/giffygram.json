@@ -58,6 +58,14 @@
       "userId": 1,
       "timestamp": 1632250282911,
       "id": 6
+    },
+    {
+      "title": "HotDog as a Weiner",
+      "imageURL": "https://media.giphy.com/media/NmGbJwLl7Y4lG/giphy.gif",
+      "description": "",
+      "userId": 2,
+      "timestamp": 1632256704250,
+      "id": 7
     }
   ],
   "messages": []
