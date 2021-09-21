@@ -11,6 +11,11 @@
       "name": "Moon",
       "dateJoined": 1630513631166,
       "email": "moonunit@gmail.com"
+    },
+    {
+      "name": "Dweezil",
+      "email": "dweezilboy@gmail.com",
+      "id": 3
     }
   ],
   "posts": [
@@ -37,6 +42,22 @@
       "userId": 1,
       "timestamp": 1631132781126,
       "id": 4
+    },
+    {
+      "title": "Weiner being bunnies",
+      "imageURL": "https://media.giphy.com/media/1zVOoMgOATSVi/giphy.gif",
+      "description": "well this is just a dang rabbit weiner",
+      "userId": 1,
+      "timestamp": 1632250197156,
+      "id": 5
+    },
+    {
+      "title": "Weiner Sugar Grams",
+      "imageURL": "https://media.giphy.com/media/138cD2rL96PEHe/giphy-downsized-large.gif?cid=ecf05e47kq2uqf0l23hhobng8qrw5z7yvd9rlevv2b1kcvqt&rid=giphy-downsized-large.gif&ct=g",
+      "description": "Just some sugars",
+      "userId": 1,
+      "timestamp": 1632250282911,
+      "id": 6
     }
   ],
   "messages": []
