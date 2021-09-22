@@ -1,5 +1,5 @@
 
-import { getPosts, createPost, usePostCollection, deletePost, getSinglePost, updatePost, getLoggedInUser, logoutUser, setLoggedInUser, loginUser, registerUser } from "./data/DataManager.js"
+import { getPosts, createPost, usePostCollection, deletePost, getSinglePost, updatePost, getLoggedInUser, logoutUser, setLoggedInUser, loginUser, registerUser, postLike } from "./data/DataManager.js"
 import { PostList } from "./feed/PostList.js"
 import { getJokes } from "./data/JokesData.js"
 import { NavBar } from "./nav/NavBar.js"
@@ -232,6 +232,22 @@ formElement.addEventListener("click", event => {
 	  checkForUser();
 	}
   })
+
+// collects postId and userId into and object, and then posts it to the userLikes table
+  formElement.addEventListener("click", event => {
+	event.preventDefault();
+	if (event.target.id.startsWith("like")) {
+	  const likeObject = {
+		 postId: parseInt(event.target.id.split("__")[1]),
+		 userId: getLoggedInUser().id
+	  }
+	  postLike(likeObject)
+		.then(response => {
+		  showPostList();
+		})
+	}
+  })
+
   
 
 const showFilteredPosts = (year) => {

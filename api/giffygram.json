@@ -16,6 +16,21 @@
       "name": "Dweezil",
       "email": "dweezilboy@gmail.com",
       "id": 3
+    },
+    {
+      "name": "Bat Lhuna",
+      "email": "lhunaisbat@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "Sweetie Girl",
+      "email": "sweetielovecheese@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "Sunbeam Dream",
+      "email": "silverbackweiner@gmail.com",
+      "id": 6
     }
   ],
   "posts": [
@@ -68,5 +83,36 @@
       "id": 7
     }
   ],
-  "messages": []
+  "userLikes": [
+    {
+      "postId": 2,
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "postId": 1,
+      "userId": 6,
+      "id": 2
+    },
+    {
+      "postId": 1,
+      "userId": 6,
+      "id": 3
+    },
+    {
+      "postId": 4,
+      "userId": 6,
+      "id": 4
+    },
+    {
+      "postId": 1,
+      "userId": 6,
+      "id": 5
+    },
+    {
+      "postId": 2,
+      "userId": 6,
+      "id": 6
+    }
+  ]
 }

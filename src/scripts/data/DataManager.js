@@ -96,29 +96,46 @@ export const loginUser = (userObj) => {
 //will post a new user to the users table
 export const registerUser = (userObj) => {
 	return fetch(`http://localhost:8088/users`, {
-	  method: "POST",
+		method: "POST",
 		headers: {
 			"Content-Type": "application/json"
 		},
 		body: JSON.stringify(userObj)
 	})
-	.then(response => response.json())
-	.then(parsedUser => {
-	  setLoggedInUser(parsedUser);
-	  return getLoggedInUser();
-	})
-  }
+		.then(response => response.json())
+		.then(parsedUser => {
+			setLoggedInUser(parsedUser);
+			return getLoggedInUser();
+		})
+}
 
-  //used to know the author of a post, since we have multiple posts. Uses a json feature to expand on the user
-  export const getPosts = () => {
+//used to know the author of a post, since we have multiple posts. Uses a json feature to expand on the user
+export const getPosts = () => {
 	const userId = getLoggedInUser().id
 	return fetch(`http://localhost:8088/posts?_expand=user`)
+		.then(response => response.json())
+		.then(parsedResponse => {
+			console.log("data with user", parsedResponse)
+			postCollection = parsedResponse
+			return parsedResponse;
+		})
+}
+
+// this updates the state of our posts, and renders our content updated
+export const postLike = likeObject => {
+	return fetch(`http://localhost:8088/userLikes/`, {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json"
+		},
+		body: JSON.stringify(likeObject)
+	})
+		.then(response => response.json())
+		// .then(getPosts)
+}
+
+export const getLikes = (postId) => {
+	return fetch(`http://localhost:8088/userLikes?postId=${postId}`)
 	  .then(response => response.json())
-	  .then(parsedResponse => {
-		console.log("data with user", parsedResponse)
-		postCollection = parsedResponse
-		return parsedResponse;
-	  })
   }
-  
   
