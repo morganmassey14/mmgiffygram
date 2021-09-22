@@ -113,6 +113,41 @@
       "postId": 2,
       "userId": 6,
       "id": 6
+    },
+    {
+      "postId": 1,
+      "userId": 6,
+      "id": 7
+    },
+    {
+      "postId": 4,
+      "userId": 6,
+      "id": 8
+    },
+    {
+      "postId": 4,
+      "userId": 6,
+      "id": 9
+    },
+    {
+      "postId": 4,
+      "userId": 6,
+      "id": 10
+    },
+    {
+      "postId": 7,
+      "userId": 6,
+      "id": 11
+    },
+    {
+      "postId": 6,
+      "userId": 6,
+      "id": 12
+    },
+    {
+      "postId": 5,
+      "userId": 6,
+      "id": 13
     }
   ]
 }
